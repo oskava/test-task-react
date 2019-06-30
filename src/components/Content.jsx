@@ -8,7 +8,7 @@ const Content = () => {
             <h2>Head</h2>
          </div>
          <div>Content</div>
-       </div>
+      </div>
    );
 }
 
