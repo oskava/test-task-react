@@ -4,7 +4,10 @@ import '../styles/About.css';
 const About = (props) => {
    return (
       <div>
-         About author
+         <div id='title'>
+            <h2>About author</h2>
+         </div>
+         <div id='text'>Text</div>
       </div>
    );
 }

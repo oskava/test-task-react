@@ -1,19 +1,23 @@
 import React from 'react';
 import '../styles/Navbar.css';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
    return (
       <nav className='nav'>
          <div className='item'>
-          <a href="/authorization">Authorization</a>
+            <NavLink to="/authorization">
+               <span className='left-fixer'>
+                  Authorization
+               </span></NavLink>
          </div>
          <div className='item'>
-          <a href="/main">Main page</a>
+            <NavLink to="/main">Main page</NavLink>
          </div>
          <div className='item'>
-          <a href="/about">About author</a>
+            <NavLink to="/about">About author</NavLink>
          </div>
-       </nav>
+      </nav>
    );
 }
 

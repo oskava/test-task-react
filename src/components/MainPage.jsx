@@ -4,7 +4,10 @@ import '../styles/MainPage.css';
 const MainPage = (props) => {
    return (
       <div>
-         Main Page
+         <div className='title'>
+            <h2>Main Page</h2>
+         </div>
+         <div className='text'>Text</div>
       </div>
    );
 }
