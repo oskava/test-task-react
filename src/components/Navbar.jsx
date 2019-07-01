@@ -7,15 +7,18 @@ const Navbar = () => {
       <nav className='nav'>
          <div className='item'>
             <NavLink to="/authorization">
-               <span className='left-fixer'>
+               <img src="https://cdn3.iconfinder.com/data/icons/geek-3/24/Death_Star_explode_star_wars-512.png" />
                   Authorization
-               </span></NavLink>
+               </NavLink>
          </div>
          <div className='item'>
-            <NavLink to="/main">Main page</NavLink>
+            <NavLink to="/main">
+            <img src="https://cdn3.iconfinder.com/data/icons/geek-3/24/R2D2_star_wars_droid_robot-512.png" />
+            Main page</NavLink>
          </div>
          <div className='item'>
-            <NavLink to="/about">About author</NavLink>
+            <NavLink to="/about">
+            <img src="https://cdn3.iconfinder.com/data/icons/geek-3/24/BB8_star_wars_movie_robot_droid-512.png" />About author</NavLink>
          </div>
       </nav>
    );

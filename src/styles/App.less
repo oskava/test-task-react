@@ -1,20 +1,18 @@
-.app-wrapper {
-   margin : 0;
-   padding: 0;
-   display: grid;
-   height: 700px;
-  
+.app-grid {
+   margin          : 0%;
+   padding         : 0%;
+   display         : grid;  
+
    grid-template-areas:
       "h h"
       "n c";
 
-   grid-template-rows   : 100px 1fr;
+   grid-template-rows   : 100px 3fr;
    grid-template-columns: 2fr 7fr;
 }
 
-.app-wrapper-content {
-   grid-area       : c;
-   background-color: #F2F2F2;
+.app-grid-content {
+   grid-area: c;
 }
 
 #block {
@@ -24,8 +22,8 @@
    font-size       : 16px;
    background-color: white;
    margin          : 20px 30px 30px 30px;
-   height: inherit ;
-   width: initial;
-   border-radius: 5px;
-   border: 1.5px solid #d6d6d6;
+   height          : inherit;
+   width           : initial;
+   border-radius   : 7px;
+   border          : 1.5px solid #d6d6d6;
 }

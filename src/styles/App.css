@@ -1,15 +1,13 @@
-.app-wrapper {
-  margin: 0;
-  padding: 0;
+.app-grid {
+  margin: 0%;
+  padding: 0%;
   display: grid;
-  height: 700px;
   grid-template-areas: "h h" "n c";
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 100px 3fr;
   grid-template-columns: 2fr 7fr;
 }
-.app-wrapper-content {
+.app-grid-content {
   grid-area: c;
-  background-color: #F2F2F2;
 }
 #block {
   padding: 10px 10px 10px 70px;
@@ -18,8 +16,8 @@
   font-size: 16px;
   background-color: white;
   margin: 20px 30px 30px 30px;
-  height: inherit ;
+  height: inherit;
   width: initial;
-  border-radius: 5px;
+  border-radius: 7px;
   border: 1.5px solid #d6d6d6;
 }

@@ -10,10 +10,10 @@ import { BrowserRouter, Route } from 'react-router-dom';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='app-wrapper'>
+      <div className='app-grid'>
         <Header />
         <Navbar />
-        <div className='app-wrapper-content'>
+        <div className='app-grid-content'>
           <div id='block'>
           <Route path="/authorization" component={Auth} />
           <Route path="/main" component={MainPage} />
