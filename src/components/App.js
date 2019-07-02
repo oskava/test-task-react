@@ -5,7 +5,7 @@ import Header from './Header';
 import Navbar from './Navbar';
 import Auth from './Auth';
 import About from './About';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
         <Navbar />
         <div className='app-grid-content'>
           <div id='block'>
+          <Redirect from="/" to="main" />
           <Route path="/authorization" component={Auth} />
           <Route path="/main" component={MainPage} />
           <Route path="/about" component={About} />
