@@ -46,28 +46,27 @@ class Form extends Component {
       const { name, value } = e.target;
       let formErrors = this.state.formErrors;
 
-      console.log("Name: ", name);
-      console.log("Value: ", value);
-
       switch (name) {
          case 'email':
-            formErrors.email =
-               emailRegex.test(value) && value.length > 0
-                  ? ""
-                  : "invalid email address";
+            formErrors.email = emailRegex.test(value)
+               ? ""
+               : "Invalid email address.";
             break;
          case 'password':
             formErrors.password =
-               value.length < 6 && value.length > 0
-                  ? "minimum 6 characters required"
+               value.length < 6 ? "Minimum 6 characters required."
                   : "";
             break;
          default:
             break;
       }
+
+      this.setState({ formErrors, [name]: value }, () => console.log(this.state));
    }
 
    render() {
+      const { formErrors } = this.state;
+
       return (
          <div>
             <form onSubmit={this.handleSubmit} noValidate>
@@ -82,6 +81,8 @@ class Form extends Component {
                      noValidate
                      onChange={this.handleChange}
                   />
+                  {formErrors.email.length > 0 && (
+                     <span className="errorMessage">{formErrors.email}</span>)}
                   <br />
 
                   <label for="password">Password:</label>
@@ -94,6 +95,8 @@ class Form extends Component {
                      noValidate
                      onChange={this.handleChange}
                   />
+                  {formErrors.password.length > 0 && (
+                     <span className="errorMessage">{formErrors.password}</span>)}
                   <br />
 
                </span>

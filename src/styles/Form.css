@@ -17,3 +17,8 @@
   background: #dfc7ed;
   border: 1px solid #8a699b;
 }
+.errorMessage {
+  color: red;
+  font-size: 10pt;
+  margin-left: 10px;
+}
