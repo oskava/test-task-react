@@ -7,17 +7,25 @@ import {
    Marker
 } from 'react-google-maps';
 
+
+
 function Map() {
    return (
       <GoogleMap
-         defaultZoom={18}
+         defaultZoom={16}
          defaultCenter={{ lat: 46.391665, lng: 30.723117 }}
       >
+         <Marker
+            title={'Point of geolocation.'}
+            position={{ lat: 46.391665, lng: 30.723117 }}
+         />
+
       </GoogleMap>
    );
 }
 
 const WrappedMap = withScriptjs(withGoogleMap(Map));
+
 
 const About = (props) => {
    return (
@@ -26,7 +34,7 @@ const About = (props) => {
             <h2>About author</h2>
          </div>
          <div className='text'>Text</div>
-         
+
          <div style={{ width: '600px', height: '400px' }}>
             <WrappedMap
                googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyC34G-rzSaqdktpIAsrhzIippSkmS4c9ik&v=3.exp&libraries=geometry,drawing,places`}

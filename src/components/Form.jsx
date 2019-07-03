@@ -91,7 +91,7 @@ class Form extends Component {
                      type="password"
                      className="space"
                      name="password"
-                     placeholder="At least 6 symboles"
+                     placeholder="your password"
                      noValidate
                      onChange={this.handleChange}
                   />
